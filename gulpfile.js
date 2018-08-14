@@ -45,7 +45,7 @@ gulp.task("scripts", function () {
       "./dist/js/plyr_video/plyr.js",
       "./dist/js/subscribe_form.js",
       "./dist/js/whitelist_form.js",
-      //"./dist/js/parallax.min.js",
+      "./dist/js/parallax.min.js",
       "./dist/js/app.js"
     ])
     .pipe(plumber())

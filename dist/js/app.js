@@ -153,5 +153,5 @@ jQuery(document).ready(function ($) {
 
     page.slidersInit();
   }
-  //page.parallaxSection();
+  page.parallaxSection();
 });

@@ -360,27 +360,27 @@
 }
 .wrap-container-1{
   & > .container{
-    /*background: url('../images/bg_the_problem.png') no-repeat center 70px;
+    background: url('../images/bg_the_problem.png') no-repeat center 70px;
     background-size: 1017px auto;
     @media all and (-webkit-min-device-pixel-ratio: 1.5),
       all and (-o-min-device-pixel-ratio: 3 / 2),
       all and (min--moz-device-pixel-ratio: 1.5),
       all and (min-device-pixel-ratio: 1.5) {
       background-image: url('../images/bg_the_problem@2x.png');
-    }*/
+    }
   }
 }
 .wrap-container-2{
   position: relative;
   & > .container{
     
-    /*background: url('../images/bg_features.png') no-repeat 50px 50px;
+    background: url('../images/bg_features.png') no-repeat 50px 50px;
     background-size: 916px auto;
     @media all and (-webkit-min-device-pixel-ratio: 1.5),
       all and (-o-min-device-pixel-ratio: 3 / 2),
       all and (min--moz-device-pixel-ratio: 1.5),
       all and (min-device-pixel-ratio: 1.5) {
       background-image: url('../images/bg_features@2x.png');
-    }*/
+    }
   }
 }
