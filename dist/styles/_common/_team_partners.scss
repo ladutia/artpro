@@ -175,6 +175,7 @@
   }
   @media screen and (min-width: 992px) {
     .item:hover{
+      z-index: 1;
       .tooltip-user{
         display: block;
       }

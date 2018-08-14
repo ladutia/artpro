@@ -140,6 +140,11 @@ var page = {
     $('.parallax-section').parallax({
       speed: 0.8
     });
+  },
+  animationSection: function () {
+    AOS.init({
+      duration: 1200,
+    });
   }
 };
 
@@ -154,4 +159,5 @@ jQuery(document).ready(function ($) {
     page.slidersInit();
   }
   page.parallaxSection();
+  page.animationSection();
 });
