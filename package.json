@@ -1,0 +1,36 @@
+{
+  "name": "ARTPRO",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "private": true,
+  "scripts": {
+    "build": "node_modules/.bin/gulp build",
+    "sync": "node_modules/.bin/gulp"
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "author": "Aleksey Ladutska",
+  "license": "ISC",
+  "homepage": "",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean-css": "^3.7.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "rimraf": "^2.6.1"
+  },
+  "dependencies": {
+    "gulp-sourcemaps": "^2.6.1",
+    "jquery": "^3.2.1",
+    "normalize.css": "^7.0.0"
+  }
+}

@@ -1,0 +1,51 @@
+.apply-token{
+  margin-top: 50px;
+  padding-bottom: 80px;
+  @media screen and (max-width: 991px){
+    padding-bottom: 50px;
+  }
+  @media screen and (max-width: 767px){
+    margin-top: 0;
+  }
+  @media screen and (max-width: 479px) {
+    padding-bottom: 0;
+  }
+  .container{
+    padding-top: 100px;
+    text-align: center;
+    min-height: 344px;
+    background: url('../images/apply_bg.png') no-repeat 40px 0;
+    background-size: 1092px auto;
+    @media all and (-webkit-min-device-pixel-ratio: 1.5),
+      all and (-o-min-device-pixel-ratio: 3 / 2),
+      all and (min--moz-device-pixel-ratio: 1.5),
+      all and (min-device-pixel-ratio: 1.5) {
+      background-image: url('../images/apply_bg@2x.png');
+    }
+    @media screen and (max-width: 1199px) {
+      background-position: center 0;
+    }
+    @media screen and (max-width: 767px) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      background-position: center 0;
+      background-size: 150% auto;
+    }
+    @media screen and (max-width: 649px) {
+      min-height: auto;
+    }
+  }
+  &__title{
+    color: #082460;	
+    font-size: 32px;	
+    font-weight: 800;	
+    line-height: 50px;	
+    text-align: center;
+  }
+  .btn{
+    min-width: 250px;
+    margin-top: 25px;
+    height: 54px;
+    line-height: 54px;
+  }
+}

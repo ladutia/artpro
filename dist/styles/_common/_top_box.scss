@@ -1,0 +1,62 @@
+.top-box{
+  
+  .container{
+    position: relative;
+    padding-top: 140px;
+    padding-bottom: 200px;
+    @media screen and (max-width: 767px) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  }
+  /*&__statue{
+    position: absolute;
+    top: 65px;
+    right: -95px;
+    width: 492px;
+    height: 761px;
+    background: url('../images/first_section/statue.png') no-repeat 0 0;
+  }*/
+  &__text{
+    width: 470px;
+    text-align: center;
+    @media screen and (max-width: 991px) {
+      width: 420px;
+    }
+    @media screen and (max-width: 767px) {
+      width: auto;
+    }
+  }
+  &__title{
+    color: #666;
+    font-size: 86px;
+    line-height: 90px;
+    margin-bottom: 30px;
+    font-family: 'gotham_mediumregular', Arial, Helvetica, sans-serif;
+    @media screen and (max-width: 991px) {
+      font-size: 70px;
+      line-height: 74px;
+    }
+    @media screen and (max-width: 767px) {
+      font-size: 50px;
+      line-height: 60px;
+    }
+  }
+  &__desc{
+    color: #666;
+    font-size: 18px;
+    line-height: 150%;
+    p{
+      margin: 25px 0 0 0;
+      @media screen and (max-width: 767px) {
+        margin-top: 15px;
+        br{
+          display:none;
+        }
+      }
+    }
+    @media screen and (max-width: 767px) {
+      font-size: 15px;
+    }
+  }
+}

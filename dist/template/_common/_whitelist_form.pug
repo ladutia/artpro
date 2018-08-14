@@ -1,0 +1,54 @@
+.container
+  .form-box
+    h3 Registration form
+    form(id="ema_signup_form", target="_blank" action="https://gem.godaddy.com/signups/subscribe/a819edc92af1437380e14672b1b9ad5f", accept-charset="UTF-8", method="post")
+      input(name="utf8", type="hidden", value="✓")
+      div.mimi_field.required
+        label(for="signup_first_name") First Name*
+        input.txt_field(id="signup_first_name", name="signup[first_name]", type="text", data-required-field="This field is required")
+      div.mimi_field.required
+        label(for="signup_last_name") Last Name*
+        input.txt_field(id="signup_last_name", name="signup[last_name]", type="text", data-required-field="This field is required")
+      div.mimi_field.required
+        label(for="signup_phone") Phone*
+        input.txt_field(id="signup_phone", name="signup[phone]", type="text", data-required-field="This field is required")
+      div.mimi_field.required
+        label(for="signup_email") Email*
+        input.txt_field(id="signup_email", name="signup[email]", type="text", data-required-field="This field is required", placeholder="you@example.com")
+      div.mimi_field.required
+        label(for="signup_address") Address*
+        input.txt_field(id="signup_address", name="signup[address]", type="text", data-required-field="This field is required")
+      div.mimi_field.required
+        label(for="signup_city") City*
+        input.txt_field(id="signup_city", name="signup[city]", type="text", data-required-field="This field is required")
+      div.mimi_field.required
+        label(for="signup_country") Country*
+        input.txt_field(id="signup_country", name="signup[country]", type="text", data-required-field="This field is required")
+      div.mimi_field.required
+        label(for="signup_usd") What is your intended investment level? (USD)*
+        input.txt_field(type="text", name="signup[usd]", id="signup_usd", data-required-field="This field is required")
+        input.field_type(type="hidden", data-field-type="text_field")
+      div.mimi_field.required
+        label(for="signup_investing") What's your preferred way of payment?*
+        select.mimi_html_dropdown(name="signup[investing]", id="signup_investing")
+          option(value="") Choose an option
+          option(value="ETH") ETH
+          option(value="Fiat") Fiat
+          option(value="BTC") BTC
+          option(value="Other") Other
+          input.field_type(type="hidden", data-field-type="dropdown")
+      div.mimi_field.required
+        label(for="signup_wallet") Ethereum Wallet address you will receive the APT into (starts with 0x....)**
+        input.txt_field(type="text", name="signup[wallet]", id="signup_wallet", data-required-field="This field is required")
+        input.field_type(type="hidden", data-field-type="text_field")
+      div.mimi_field
+        label(for="signup_how_did_you_find_us") How did you find us
+        input.txt_field(type="text", name="signup[how_did_you_find_us]", id="signup_how_did_you_find_us", data-required-field="This field is required")
+        input.field_type(type="hidden", data-field-type="text_field")
+      div(style="background: white; font-size:1px; height: 0; overflow: hidden")
+        input.txt_field(type="text", name="06c3ea3445d90cb5d55fbe63e4c610d3", style="font-size: 1px; width: 1px !important; height:1px !important; border:0 !important; line-height: 1px !important; padding: 0 0; min-height:1px !important;")
+        input.checkbox(type="checkbox", name="beacon")
+      div.mimi_field.mimi_field--button
+        input.submit(type="submit", value="Subscribe", id="webform_submit_button", data-default-text="Subscribe", data-submitting-text="Sending...", data-invalid-text="↑ You forgot some required fields", data-choose-list="↑ Choose a list", data-thanks="Thank you!")
+    
+

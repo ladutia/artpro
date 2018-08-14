@@ -1,0 +1,96 @@
+.documentation{
+  padding-top: 10px;
+  padding-bottom: 220px;
+  background: #EDEDED url('../images/bg_live_product.png') no-repeat 0 0;
+  background-size: cover;
+  @media all and (-webkit-min-device-pixel-ratio: 1.5),
+    all and (-o-min-device-pixel-ratio: 3 / 2),
+    all and (min--moz-device-pixel-ratio: 1.5),
+    all and (min-device-pixel-ratio: 1.5) {
+    background-image: url('../images/bg_live_product@2x.png');
+  }
+  @media screen and (max-width: 767px) {
+    padding-bottom: 20px;
+  }
+  .container{
+    padding-top: 1px;
+  }
+  h2{
+    margin-bottom: 20px;
+  }
+  &__wrap,
+  &__box{
+    width: 418px;
+    height: 541px;
+    display: block;
+    position: absolute;
+    top: -66px;
+    right: 15px;
+    @media screen and (max-width: 991px) {
+      width: 300px;
+      height: 390px;
+      top: 6px;
+    }
+    @media screen and (max-width: 767px) {
+      position: relative;
+      top: auto;
+      right: auto;
+      max-width: 100%;
+    }
+  }
+  &__wrap{
+    background: url('../images/doc.png') no-repeat 0 0;
+    background-size: 100% auto;
+    @media all and (-webkit-min-device-pixel-ratio: 1.5),
+      all and (-o-min-device-pixel-ratio: 3 / 2),
+      all and (min--moz-device-pixel-ratio: 1.5),
+      all and (min-device-pixel-ratio: 1.5) {
+      background-image: url('../images/doc@2x.png');
+    }
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+  &__box{
+    @media screen and (max-width: 767px) {
+      background: url('../images/doc.png') no-repeat 0 0;
+      background-size: 100% auto;
+      margin: 20px auto 0;
+    }
+    @media all and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 767px),
+      all and (-o-min-device-pixel-ratio: 3 / 2) and (max-width: 767px),
+      all and (min--moz-device-pixel-ratio: 1.5) and (max-width: 767px),
+      all and (min-device-pixel-ratio: 1.5) and (max-width: 767px) {
+      background-image: url('../images/doc@2x.png');
+    }
+  }
+  &__desc{
+    font-size: 15px;	
+    line-height: 22px;
+    max-width: 445px;
+  }
+  &__overlay{
+    position: absolute;
+    right: -30px;
+    top: 85px;
+    width: 822px;
+    height: 282px;
+    background: url('../images/bg_doc.png') no-repeat 0 0;
+    background-size: 100% auto;
+    @media all and (-webkit-min-device-pixel-ratio: 1.5),
+      all and (-o-min-device-pixel-ratio: 3 / 2),
+      all and (min--moz-device-pixel-ratio: 1.5),
+      all and (min-device-pixel-ratio: 1.5) {
+      background-image: url('../images/bg_doc@2x.png');
+    }
+    @media screen and (max-width: 991px) {
+      width: 500px;
+      right: 0;
+      top: 200px;
+      height: 180px;
+    }
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+}

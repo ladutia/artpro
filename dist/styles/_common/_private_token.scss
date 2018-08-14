@@ -1,0 +1,103 @@
+.private-token{
+  padding-top: 10px;
+  padding-bottom: 120px;
+  background: #EDEDED url('../images/bg_live_product.png') no-repeat 0 0;
+  background-size: cover;
+  @media all and (-webkit-min-device-pixel-ratio: 1.5),
+    all and (-o-min-device-pixel-ratio: 3 / 2),
+    all and (min--moz-device-pixel-ratio: 1.5),
+    all and (min-device-pixel-ratio: 1.5) {
+    background-image: url('../images/bg_live_product@2x.png');
+  }
+  @media screen and (max-width: 767px) {
+    padding-top: 1px;
+    padding-bottom: 40px;
+  }
+  h2{
+    margin-bottom: 10px;
+  }
+  &__text{
+    font-size: 15px;
+    line-height: 22px;	
+  }
+  .list{
+    max-width: 1050px;
+    margin: 65px auto 0;
+    .item{
+      width: 33.3333333%;
+      float: left;
+      padding-left: 35px;
+      &:first-child{
+        padding-left: 0;
+      }
+      @media screen and (max-width: 767px) {
+        float: none;
+        width: 100%;
+        padding-left: 0;
+        margin-top: 50px;
+        &:first-child{
+          margin-top: 0;
+        }
+      }
+      &--1{
+        .item__icn{
+          background-image: url('../images/icn_register.svg');
+          background-size: 60px auto;
+        }
+      }
+      &--2{
+        .item__icn{
+          background-image: url('../images/icn_bank.svg');
+          background-size: 60px auto;
+        }
+      }
+      &--3{
+        .item__icn{
+          background-image: url('../images/icn_form.svg');
+          background-size: 50px auto;
+        }
+      }
+      .item__number{
+        position: absolute;
+        left: -13px;
+        top: -17px;
+        width: 47px;
+        height: 48px;
+        line-height: 48px;
+        text-align: center;
+        font-size: 26px;
+        color: #fff;
+        margin: 0 auto;
+        background: url("../images/icn_circle_1.svg") no-repeat 0 0;
+        background-size: auto auto;
+        background-size: 100%;
+        &--style-2{
+          background: url("../images/icn_circle_2.svg") no-repeat 0 0;
+        }
+      }
+      .item__icn{
+        position: relative;
+        width: 126px;
+        height: 126px;
+        border-radius: 50%;
+        margin: 0 auto;
+        background-color: #E1E1E1;
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+      .item__text{
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: uppercase;
+        color: #666666;
+        text-align: center;
+        font-weight: 600;
+        max-width: 250px;
+        margin: 45px auto 0;
+        @media screen and (max-width: 767px) {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}

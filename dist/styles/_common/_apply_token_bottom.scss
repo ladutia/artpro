@@ -1,0 +1,11 @@
+.apply-token-bottom{
+  .apply-token{
+    padding-bottom: 90px;
+    h2{
+      margin-bottom: 30px;
+    }
+    @media screen and (max-width: 767px) {
+      padding-bottom: 40px;
+    }
+  }
+}

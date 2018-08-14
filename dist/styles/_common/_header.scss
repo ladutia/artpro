@@ -1,0 +1,117 @@
+.header {
+  height: 74px;
+  position: relative;
+  z-index: 2;
+  @media screen and (max-width: 991px) {
+    height: 60px;
+  }
+  &__logo{
+    width: 80px;
+    margin-top: 9px;
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    text-align: center;
+    &:focus,
+    &:hover{
+      text-decoration: none;
+    }
+    img{
+      width: 40px;
+    }
+    &-text{
+      font-size: 14px;
+      line-height: 18px;
+      color: #1A1A1A;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: 5px;
+      font-weight: 600;
+    }
+  }
+  .nav {
+    float: right;
+    position: relative;
+    padding: 20px 0;
+    ul{
+      display: inline-block;
+      vertical-align: top;
+    }
+    li {
+      position: relative;
+      margin: 0 10px;
+      padding: 6px 0;
+      float: left;
+      & > a {
+        line-height: 22px;
+        font-size: 15px;
+        color: #4D4D4D;
+        display: inline-block;
+        vertical-align: top;
+        text-decoration: none;
+        @media screen and (min-width: 1150px) {
+          text-transform: uppercase;
+        }
+        &.nav__active{
+          color: #0C8AE3;
+        }
+      }
+    }
+    @media screen and (max-width: 991px) {
+      display: none;
+    }
+  }
+  .btn-subscribe{
+    border: 1px solid #0C8FE8;
+    height: 34px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    text-decoration: none;
+    line-height: 32px;
+    color: #666666;
+    width: 120px;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-left: 8px;
+    &:hover{
+      color: #fff;
+      background: linear-gradient(45deg, #00dcff, #0c8fe8);
+    }
+    &:active{
+      background: linear-gradient(45deg, #00b6ff, #0c76e8);
+    }
+  }
+  &__menu-mobile {
+    display: none;
+    @media screen and (max-width: 991px) {
+      display: block;
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top:15px;
+      right: 15px;
+      cursor: pointer;
+      svg{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -9px 0 0 -9.5px;
+      }
+    }
+  }
+}
+.fixed-header{
+  @media screen and (min-width: 992px) {
+    .header{
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      background-color: #fff;
+      box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+    }
+  }
+}

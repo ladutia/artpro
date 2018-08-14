@@ -1,0 +1,22 @@
+.footer
+  .container(data-scroll-index="8", id="section-8") 
+    a.footer__logo(href="#section-0",data-scroll-nav="0")
+      img(src="images/logo.svg", alt="")
+      .footer__logo-text ArtPro
+    ul.list.clearfix
+      li
+        .item__title Contacts 
+        .item__text 020 7157 9637<br/> <a href="mailto:hello@art-pro.io">hello@art-pro.io</a>
+      li
+        .item__title Locations 
+        .item__text ArtPro Platform LTD<br/> 130 Old Street<br/> London<br/> EC1V 9BD
+
+include ../_common/_links
+
+//Adroll
+script
+  include ../../js/adroll.js
+//Global site tag (gtag.js) - Google Analytics
+script(async,src="https://www.googletagmanager.com/gtag/js?id=UA-123166679-1")
+script
+  include ../../js/googleAnalytics.js

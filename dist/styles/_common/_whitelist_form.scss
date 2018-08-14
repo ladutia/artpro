@@ -1,0 +1,176 @@
+.whitelist-form{
+  padding-bottom: 100px;
+  height: auto;
+  min-height: 100%;
+  background: #EDEDED url('../images/bg_live_product.png') no-repeat 0 0;
+  background-size: cover;
+  @media all and (-webkit-min-device-pixel-ratio: 1.5),
+    all and (-o-min-device-pixel-ratio: 3 / 2),
+    all and (min--moz-device-pixel-ratio: 1.5),
+    all and (min-device-pixel-ratio: 1.5) {
+    background-image: url('../images/bg_live_product@2x.png');
+  }
+  @media screen and (max-width: 767px) {
+    padding-bottom: 40px;
+  }
+  h3{
+    color: #5E5E5E;	
+    font-size: 28px;	
+    font-weight: 600;
+    line-height: 38px;
+    margin: 0 0 20px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 15px;
+    }
+  }
+}
+.form-box{
+  background: #fff;
+  padding: 45px 35px 17px;
+  box-shadow: 0 2px 14px 0 rgba(0,0,0,0.09);
+  margin: 100px auto 0;
+  max-width: 560px;
+  @media screen and (max-width: 767px) {
+    padding: 10px 15px 5px;
+    margin-top: 40px;
+  }
+  label{
+    color: #3A3A3A;
+    font-size: 16px;	
+    line-height: 22px;
+    margin: 0 0 6px 0;
+    display: inline-block;
+  }
+  .txt_field{
+    height: 42px;
+    font-size: 16px;
+    line-height: 22px;
+    border: 1px solid #c7c7c7;
+    border-radius: 0;
+    background: #fff;
+    display: block;
+    font-weight: normal;
+    padding: 10px 12px;
+    color: #5E5E5E;
+    width: 100%;
+  }
+  select{
+    width: 100%;
+    height: 42px;
+    border: 1px solid #c7c7c7;
+    padding: 10px 12px;
+    background: #fff;
+    color: #5E5E5E;
+    font-size: 16px;
+    line-height: 22px;
+    option{
+      color: #5E5E5E;
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+  .mimi_field{
+    margin-bottom: 15px;
+    &--button{
+      padding-top: 6px;
+    }
+  }
+  .submit{
+    background: linear-gradient(45deg, #00DCFF, #0C8FE8);
+    cursor: pointer;
+    font-size: 15px;
+    height: 38px;
+    line-height: 36px;
+    color: #fff;
+    &:hover{
+      background: linear-gradient(45deg, #0C8FE8, #00DCFF);
+    }
+    &:focus{
+      color: #fff;
+    }
+  }
+}
+.page-thanks{
+  padding-bottom: 100px;
+  height: auto;
+  min-height: 100%;
+  background: #EDEDED url('../images/bg_live_product.png') no-repeat 0 0;
+  background-size: cover;
+  @media all and (-webkit-min-device-pixel-ratio: 1.5),
+    all and (-o-min-device-pixel-ratio: 3 / 2),
+    all and (min--moz-device-pixel-ratio: 1.5),
+    all and (min-device-pixel-ratio: 1.5) {
+    background-image: url('../images/bg_live_product@2x.png');
+  }
+  @media screen and (max-width: 767px) {
+    padding-bottom: 40px;
+  }
+  text-align: center;
+  .form-box{
+    padding: 42px 35px 48px;
+    @media screen and (max-width: 767px) {
+      padding: 10px 15px 15px;
+      margin-top: 40px;
+    }
+  }
+  .icn{
+    width: 40px;
+    margin: 0 auto;
+  }
+  .text{
+    color: #5E5E5E;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 38px;
+    margin-top: 15px;
+    font-weight: 600;
+    @media screen and (max-width: 767px) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
+.page-done{
+  padding-bottom: 100px;
+  height: auto;
+  min-height: 100%;
+  background: #EDEDED url('../images/bg_live_product.png') no-repeat 0 0;
+  background-size: cover;
+  @media all and (-webkit-min-device-pixel-ratio: 1.5),
+    all and (-o-min-device-pixel-ratio: 3 / 2),
+    all and (min--moz-device-pixel-ratio: 1.5),
+    all and (min-device-pixel-ratio: 1.5) {
+    background-image: url('../images/bg_live_product@2x.png');
+  }
+  @media screen and (max-width: 767px) {
+    padding-bottom: 40px;
+  }
+  .form-box{
+    padding: 30px 35px;
+    @media screen and (max-width: 767px) {
+      padding: 10px 15px 15px;
+      margin-top: 40px;
+    }
+  }
+  .done-form{
+    &__title{
+      color: #5E5E5E;	
+      font-size: 28px;	
+      line-height: 38px;
+      font-weight: 600;
+      @media screen and (max-width: 767px) {
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+    &__text{
+      color: #5E5E5E;
+      font-size: 14px;	
+      line-height: 20px;
+      margin-top: 15px;
+      @media screen and (max-width: 767px) {
+        margin-top: 10px;
+      }
+    }
+  }
+}

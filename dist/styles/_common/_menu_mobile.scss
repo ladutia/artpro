@@ -1,0 +1,78 @@
+.overlay{
+  display: none;
+}
+@media screen and (max-width: 991px){
+.overlay{
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255,255,255,0.9);
+  z-index: 1040;
+  overflow-y: auto;
+  .overlay-close{
+    width: 58px;
+    height: 58px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    overflow: hidden;
+    border: none;
+    text-indent: 200%;
+    color: transparent;
+    outline: none;
+    z-index: 1;
+    svg{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 18px;
+      height: 18px;
+      margin: -9px 0 0 -9px;
+    }
+  }
+  nav{
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  ul{
+    list-style: none;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    li{
+      display: block;
+      min-height: 36px;
+      backface-visibility: hidden;
+      a{
+        font-size: 20px;
+        display: block;
+        color: #333;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: color 0.2s;
+        &.nav__active{
+          font-weight: bold;
+          color: #317AFF;
+        }
+      }
+    }
+  }
+}
+.overlay-scale{
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+  &.open{
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);  
+    transition: transform 0.4s, opacity 0.4s;
+  }
+}
+}

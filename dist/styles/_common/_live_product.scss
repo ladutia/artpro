@@ -1,0 +1,33 @@
+.live-product{
+  padding-top: 40px;
+  background: #EDEDED url('../images/bg_live_product.png') no-repeat 0 0;
+  background-size: cover;
+  @media all and (-webkit-min-device-pixel-ratio: 1.5),
+    all and (-o-min-device-pixel-ratio: 3 / 2),
+    all and (min--moz-device-pixel-ratio: 1.5),
+    all and (min-device-pixel-ratio: 1.5) {
+    background-image: url('../images/bg_live_product@2x.png');
+  }
+  @media screen and (max-width: 767px) {
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+  h2{
+    margin-bottom: 0;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 20px;
+    }
+  }
+  &__img{
+    margin-top: -70px;
+    margin-left: -70px;
+    text-align: left;
+    @media screen and (max-width: 991px) {
+      margin-top: -40px;
+    }
+    @media screen and (max-width: 767px) {
+      margin-top: 0;
+      margin-left: -20px;
+    }
+  }
+}

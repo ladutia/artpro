@@ -1,0 +1,165 @@
+.token-distribution-2{
+  padding-top: 30px;
+  padding-bottom: 100px;
+  @media screen and (max-width: 767px) {
+    padding-bottom: 40px;
+    padding-top: 1px;
+  }
+  background: #EDEDED url('../images/bg_live_product.png') no-repeat 0 0;
+  background-size: cover;
+  @media all and (-webkit-min-device-pixel-ratio: 1.5),
+    all and (-o-min-device-pixel-ratio: 3 / 2),
+    all and (min--moz-device-pixel-ratio: 1.5),
+    all and (min-device-pixel-ratio: 1.5) {
+    background-image: url('../images/bg_live_product@2x.png');
+  }
+  .chart{
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 70px;
+    & > img{
+      @media screen and (max-width: 991px) {
+        display: none;
+      }
+    }
+    @media screen and (max-width: 767px) {
+      padding-bottom: 0;
+    }
+  }
+  .chart{
+    .list{
+      .item{
+        text-align: center;
+        max-width: 230px;
+        position: relative;
+        &--1{
+          position: absolute;
+          left: 50%;
+          top: 100px;
+          margin-left: -115px;
+          .item__icn{
+            position: absolute;
+            left: 57px;
+            top: -145px;
+            background-image: url('../images/charts/token_distribution_2/step_1.svg');
+            background-size: 62px auto;
+          }
+        }
+        &--2{
+          position: absolute;
+          left: 50%;
+          top: 103px;
+          margin-left: 303px;
+          @media screen and (max-width: 991px) {
+            margin: 0;
+            left: 0;
+            top: 0;
+            position: relative;
+          }
+          .item__icn{
+            position: absolute;
+            left: -151px;
+            top: 1px;
+            background-image: url('../images/charts/token_distribution_2/step_2.svg');
+            background-size: 61px auto;
+          }
+        }
+        &--3{
+          position: absolute;
+          left: 50%;
+          top: 100px;
+          margin-left: 222px;
+          margin-top: 248px;
+          .item__icn{
+            position: absolute;
+            left: -154px;
+            top: -11px;
+            background-image: url('../images/charts/token_distribution_2/step_3.svg');
+            background-size: 54px auto;
+          }
+        }
+        &--4{
+          position: absolute;
+          left: 50%;
+          top: 100px;
+          margin-top: 250px;
+          margin-left: -449px;
+          .item__icn{
+            position: absolute;
+            left: 254px;
+            top: -14px;
+            background-image: url('../images/charts/token_distribution_2/step_4.svg');
+            background-size: 73px auto;
+          }
+        }
+        &--5{
+          position: absolute;
+          left: 50%;
+          top: 100px;
+          margin-top: -2px;
+          margin-left: -520px;
+          .item__icn{
+            position: absolute;
+            left: 243px;
+            top: 14px;
+            background-image: url('../images/charts/token_distribution_2/step_5.svg');
+            background-size: 58px auto;
+          }
+        }
+        @media screen and (max-width: 991px) {
+          &--1,
+          &--2,
+          &--3,
+          &--4,
+          &--5{
+            margin: 20px 0 0 0;
+            left: 0;
+            top: 0;
+            position: relative;
+            float: left;
+            width: 33.333333%;
+            padding: 0 10px;
+            max-width: 100%;
+            .item__icn{
+              left: 0;
+              top: 0;
+              position: relative;
+            }
+          }
+          
+        }
+        @media screen and (max-width: 767px) {
+          float: none;
+          width: 100%;
+          &:first-child{
+            margin-top: 0;
+          }
+        }        
+        .item__icn{
+          width: 126px;
+          height: 126px;
+          border-radius: 50%;
+          margin: 0 auto;
+          background-color: #E1E1E1;
+          background-position: center center;
+          background-repeat: no-repeat;
+          @media screen and (max-width: 991px) {
+            margin-bottom: 25px;
+          }
+        }
+        &__title{
+          font-size: 16px;
+          line-height: 19px;
+          text-transform: uppercase;
+          color: #666;
+        }
+        &__text{
+          margin-top: 20px;
+          font-size: 15px;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+}

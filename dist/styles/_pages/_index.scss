@@ -1,0 +1,39 @@
+.plyr--video{
+    .plyr__controls{
+      display: none;
+    }
+    &:hover{
+      .plyr__controls{
+        display: flex;
+      }
+    }
+    &.plyr--fullscreen-active{
+      .js-player{
+        width:  100%!important;
+        height: 100%!important;
+      }
+    }
+    .plyr__play-large{
+      width: 50px;
+      height: 49px;
+      border: 0;
+      border-radius: 0;
+      box-shadow: none;
+      cursor: pointer;
+      & > svg{
+        display: none;
+      }
+      & > span{
+        display: none;
+      }
+      background: transparent url('../images/icn_play.png') no-repeat 0 0;
+      background-size: 100% auto;
+      @media all and (-webkit-min-device-pixel-ratio: 1.5),
+        all and (-o-min-device-pixel-ratio: 3 / 2),
+        all and (min--moz-device-pixel-ratio: 1.5),
+        all and (min-device-pixel-ratio: 1.5) {
+        background: transparent url('../images/icn_play@2x.png') no-repeat 0 0;
+        background-size: 100% auto;
+      }
+    }
+  }

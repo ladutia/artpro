@@ -1,0 +1,32 @@
+.wrap-header{
+  position: relative;
+  overflow: hidden;
+  background-color: #E6E6E6;
+  background: url('../images/top_bg.png') no-repeat center 0;
+  background-size: cover;
+  
+  @media all and (-webkit-min-device-pixel-ratio: 1.5),
+    all and (-o-min-device-pixel-ratio: 3 / 2),
+    all and (min--moz-device-pixel-ratio: 1.5),
+    all and (min-device-pixel-ratio: 1.5) {
+    background-image: url('../images/top_bg@2x.png');
+  }
+  @media screen and (max-width: 767px) {
+    background-position: left 0;
+    background-size: auto 200%;
+  }
+  /*&__bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../images/first_section/bg_top.png') no-repeat center 0;
+  }*/
+}
+.fixed-header .wrap-header{
+  padding-top: 74px;
+  @media screen and (max-width: 991px) {
+    padding-top: 0;
+  }
+}
