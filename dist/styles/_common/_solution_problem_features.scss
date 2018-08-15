@@ -155,19 +155,24 @@
   }  
   .how-it-works{
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
     @media screen and (max-width: 767px) {
       padding-top: 30px;
       padding-bottom: 30px;
     }
     .list{
-      padding-top: 10px;
+      margin: -30px auto;
+      max-width: 960px;
+      text-align: center;
+      margin-top: -30px;
       li{
         position: relative;
-        float: left;
+        display: inline-block;
+        vertical-align: top;
         width: 33.333333%;
         text-align: center;
         padding: 0 30px;
+        margin-top: 40px;
         @media screen and (max-width: 991px) {
           padding: 0 10px;
         }
@@ -183,33 +188,45 @@
       }
       .item{
         &__icn{
-          width: 126px;
-          height: 126px;
+          width: 98px;
+          height: 98px;
           background-color: #E1E1E1;
           background-position: center center;
           background-repeat: no-repeat;
           border-radius: 50%;
-          margin: 0 auto 40px;
+          margin: 0 auto 30px;
           @media screen and (max-width: 767px) {
-            margin-bottom: 20px;
+            margin-top: 20px;
           }
         }
         &--1{
           .item__icn{
-            background-image: url('../images/how_it_works_3.svg');
-            background-size: 47px auto;
+            background-image: url('../images/how_it_works_1.svg');
+            background-size: 46px auto;
           }
         }
         &--2{
           .item__icn{
             background-image: url('../images/how_it_works_2.svg');
-            background-size: 73px auto;
+            background-size: 46px auto;
           }
         }
         &--3{
           .item__icn{
-            background-image: url('../images/how_it_works_1.svg');
-            background-size: 72px auto;
+            background-image: url('../images/how_it_works_3.svg');
+            background-size: 44px auto;
+          }
+        }
+        &--4{
+          .item__icn{
+            background-image: url('../images/how_it_works_4.svg');
+            background-size: 52px auto;
+          }
+        }
+        &--5{
+          .item__icn{
+            background-image: url('../images/how_it_works_5.svg');
+            background-size: 48px auto;
           }
         }
         &__title{
@@ -222,7 +239,9 @@
         &__text{
           font-size: 15px;	
           line-height: 22px;
-          margin-top: 20px;
+          max-width: 220px;
+          margin-left: auto;
+          margin-right: auto;
           &:hover{
             .tooltip-inf{
               display: block;

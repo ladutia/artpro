@@ -1,6 +1,54 @@
 .subscribe-news{
-  padding-top: 20px;
+  padding-bottom: 90px;
   h2{
     margin-bottom: 30px;
+  }
+  @media screen and (max-width: 767px) {
+    padding-bottom: 40px;
+  }
+  .social-links{
+    padding-top: 20px;
+    &__title{
+      color: #666;
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 600;
+      margin: 0;
+    }
+    a{
+      display: inline-block;
+      vertical-align: top;
+      width: 37px;
+      height: 33px;
+      margin: 20px 20px 0 0;
+      background-position: center center;
+      background-repeat: no-repeat;
+      &.reddit{
+        background-image: url('../images/social/icn_reddit.svg');
+      }
+      &.medium{
+        background-image: url('../images/social/icn_medium.svg');
+      }
+      &.telegram{
+        background-image: url('../images/social/icn_telegram.svg');
+      }
+      &.twitter{
+        width: 32px;
+        background-image: url('../images/social/icn_twitter.svg');
+      }
+      &.facebook{
+        background-image: url('../images/social/icn_facebook.svg');
+      }
+      &.instagram{
+        background-image: url('../images/social/icn_instagram.svg');
+      }
+      &.bitcoin-talk{
+        background-image: url('../images/social/icn_bitcoin_talk.svg');
+      }
+      &.linkedin{
+        background-image: url('../images/social/icn_linkedin.svg');
+        background-size: 33px auto;
+      }
+    }
   }
 }
