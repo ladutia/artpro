@@ -4,5 +4,11 @@
     h2{
       margin-bottom: 30px;
     }
+    .btn-whitelist{
+      margin: 30px 0 0 0;
+      @media screen and (max-width: 767px) {
+        max-width: 100%;
+      }
+    }
   }
 }
